@@ -1,0 +1,62 @@
+FMCG Inventory Intelligence Platform — Version 3
+
+OPEN THIS FOLDER IN VS CODE.
+
+1. Open Terminal.
+
+2. Create environment:
+   python -m venv .venv
+
+3. Activate:
+   .venv\Scripts\activate
+
+4. Install:
+   pip install -r requirements.txt
+
+5. Optional:
+   pip install -r optional_requirements.txt
+
+6. Initialize ALL THREE ML modules:
+   python -m core.init_project
+
+7. Start:
+   streamlit run app.py
+
+Demo users:
+- platform_admin / admin123        -> all modules
+- stockout_admin / admin123        -> Stockout Risk
+- demand_admin / admin123          -> Demand & Replenishment
+- anomaly_admin / admin123         -> Inventory Anomaly Detection
+
+Version 3 includes:
+1. Stockout Risk Prediction
+2. Demand Prediction & Replenishment
+3. Inventory Anomaly Detection
+
+Anomaly model selector:
+- Hybrid: Isolation Forest + Rules
+- Isolation Forest
+- Local Outlier Factor
+- One-Class SVM
+- Autoencoder
+- Statistical Rules
+
+Anomaly dashboard filters:
+- model
+- date range
+- warehouse
+- category
+- brand
+- SKU
+- supplier
+- batch
+- anomaly type
+- severity
+- stock status
+- detected anomalies only
+
+Read:
+README.md
+ANOMALY_IMPLEMENTATION_AUDIT.md
+FILTER_DASHBOARD_AUDIT.md
+IMPLEMENTATION_AUDIT.md
