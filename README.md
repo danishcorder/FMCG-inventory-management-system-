@@ -1,3 +1,16 @@
+---
+title: FMCG Inventory Intelligence
+emoji: 📦
+colorFrom: blue
+colorTo: green
+sdk: streamlit
+sdk_version: "1.0.0"
+app_file: app.py
+pinned: false
+---
+
+
+
 # FMCG Inventory Intelligence Platform — Version 3
 
 A connected, synthetic-first FMCG Machine Learning platform with three separate business dashboards under one shared Unicorn Enterprise UI.
